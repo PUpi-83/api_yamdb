@@ -12,21 +12,37 @@
 
 ## Как запускаем проект:
 ##### Запускаем терминал. Клонируем репозиторий и переходим в него с помощью командной строки
+```
 git clone https://github.com/PUpi-83/api_final_yatube.git
+```
 ##### После успешного клонирования переходим в сам проект
+```
 cd api_yamdb
-##### Следом создаём и активируем виртуальное окружение 
+```
+##### Следом создаём и активируем виртуальное окружение
+```
 python -m venv venv
 source venv/Scripts/activate
+```
 ##### или
+```
 . venv/Scripts/activate
+```
 ##### Обновляем pip, устанавливаем зависимости
+```
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+```
 ##### Выполняем миграции
+```
 python manage.py migrate
+```
 ##### И запускаем проект
+```
 python manage.py runserver
+```
 
 ## Документация к проекту откроется по ссылке ниже после запуска проекта, где Вы сможете посмотреть все виды примеров запросов:
+```
 http://127.0.0.1:8000/redoc/#section/Opisanie :flushed:
+```
